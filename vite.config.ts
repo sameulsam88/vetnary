@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    // Explicitly target Cloudflare module output for Nitropack deploy builds.
+    // The repo scaffold is a TanStack Start app whose default bundler flow assumes Cloudflare.
+    preset: "cloudflare-module",
+  },
 });
