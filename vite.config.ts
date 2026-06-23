@@ -20,12 +20,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     nitro({
-      preset: "cloudflare-module",
-      output: {
-        dir: ".output",
-        serverDir: ".output/server",
-        publicDir: ".output/public",
-      },
+      preset: "vercel",
     }),
   ],
   resolve: {
