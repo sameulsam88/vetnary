@@ -18,7 +18,8 @@ export function SiteFooter() {
           <div>
             <Logo className="h-12 w-auto" invert />
             <p className="mt-4 max-w-xs text-sm text-white/70">
-              Specialized veterinary hospital construction and luxury remodeling throughout New Jersey since day one.
+              Specialized veterinary hospital construction and luxury remodeling throughout New
+              Jersey since day one.
             </p>
             <div className="mt-6 flex gap-3">
               {[Instagram, Linkedin, Facebook].map((Icon, i) => (
@@ -35,7 +36,9 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">Services</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+              Services
+            </h4>
             <ul className="mt-5 space-y-3 text-sm text-white/75">
               {[
                 ["/services/veterinary-hospital-construction", "Veterinary Hospitals"],
@@ -46,32 +49,58 @@ export function SiteFooter() {
                 ["/services/home-additions", "Home Additions"],
               ].map(([to, label]) => (
                 <li key={to}>
-                  <Link to={to} className="transition hover:text-white">{label}</Link>
+                  <Link to={to} className="transition hover:text-white">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">Company</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+              Company
+            </h4>
             <ul className="mt-5 space-y-3 text-sm text-white/75">
-              <li><Link to="/about" className="hover:text-white">About</Link></li>
-              <li><Link to="/projects" className="hover:text-white">Projects</Link></li>
-              <li><Link to="/service-areas" className="hover:text-white">Service Areas</Link></li>
-              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+              <li>
+                <Link to="/about" className="hover:text-white">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-white">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/service-areas" className="hover:text-white">
+                  Service Areas
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">Contact</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+              Contact
+            </h4>
             <ul className="mt-5 space-y-3 text-sm text-white/80">
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 text-[var(--gold)] shrink-0" />
-                <a href="tel:+12012643506" className="hover:text-white">(201) 264-3506</a>
+                <a href="tel:+12012643506" className="hover:text-white">
+                  (201) 264-3506
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 text-[var(--gold)] shrink-0" />
-                <a href="mailto:info@havenmconstruction.com" className="hover:text-white break-all">info@havenmconstruction.com</a>
+                <a href="mailto:info@havenmconstruction.com" className="hover:text-white break-all">
+                  info@havenmconstruction.com
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 text-[var(--gold)] shrink-0" />

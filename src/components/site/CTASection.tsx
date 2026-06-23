@@ -20,7 +20,8 @@ export function CTASection() {
           <p className="eyebrow text-[var(--gold)]">Let's build</p>
           <h2 className="mt-4 text-4xl md:text-6xl">Ready to build something exceptional?</h2>
           <p className="mt-5 max-w-2xl text-white/75">
-            Whether you're planning a new veterinary hospital or transforming your home, our team brings healthcare-grade precision to every project.
+            Whether you're planning a new veterinary hospital or transforming your home, our team
+            brings healthcare-grade precision to every project.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link

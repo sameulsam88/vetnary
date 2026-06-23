@@ -8,20 +8,30 @@ import { services, type Service } from "@/lib/services";
 import heroImg from "@/assets/hero-vet.jpg";
 
 export function ServicePageView({ service }: { service: Service }) {
-  const related = services.filter((s) => s.slug !== service.slug && s.category === service.category).slice(0, 3);
+  const related = services
+    .filter((s) => s.slug !== service.slug && s.category === service.category)
+    .slice(0, 3);
   const Icon = service.icon;
   return (
     <>
       <PageHeader
-        eyebrow={service.category === "veterinary" ? "Veterinary Construction" : "Residential Remodeling"}
+        eyebrow={
+          service.category === "veterinary" ? "Veterinary Construction" : "Residential Remodeling"
+        }
         title={service.title}
         description={service.hero}
       >
         <div className="flex flex-wrap gap-3">
-          <Link to="/contact" className="rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--navy-deep)]">
+          <Link
+            to="/contact"
+            className="rounded-full bg-[var(--gold)] px-6 py-3 text-sm font-semibold text-[var(--navy-deep)]"
+          >
             Get Free Estimate
           </Link>
-          <a href="tel:+12012643506" className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white">
+          <a
+            href="tel:+12012643506"
+            className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white"
+          >
             <Phone className="h-4 w-4" /> (201) 264-3506
           </a>
         </div>
@@ -37,7 +47,9 @@ export function ServicePageView({ service }: { service: Service }) {
             <p className="mt-5 text-muted-foreground">{service.description}</p>
 
             <div className="mt-10">
-              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">What's included</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+                What's included
+              </h3>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {service.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-foreground/85">
@@ -49,10 +61,15 @@ export function ServicePageView({ service }: { service: Service }) {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">Our process</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+                Our process
+              </h3>
               <div className="mt-5 space-y-4">
                 {service.process.map((p, i) => (
-                  <div key={p.title} className="flex gap-5 rounded-xl border border-border bg-card p-5">
+                  <div
+                    key={p.title}
+                    className="flex gap-5 rounded-xl border border-border bg-card p-5"
+                  >
                     <div className="text-[var(--gold)] text-sm font-bold">0{i + 1}</div>
                     <div>
                       <div className="font-semibold text-foreground">{p.title}</div>
@@ -64,13 +81,17 @@ export function ServicePageView({ service }: { service: Service }) {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">Frequently asked</h3>
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-[var(--gold)]">
+                Frequently asked
+              </h3>
               <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
                 {service.faqs.map((f) => (
                   <details key={f.q} className="group p-5">
                     <summary className="cursor-pointer list-none font-semibold text-foreground flex justify-between items-center">
                       {f.q}
-                      <span className="text-[var(--gold)] transition group-open:rotate-45 text-xl leading-none">+</span>
+                      <span className="text-[var(--gold)] transition group-open:rotate-45 text-xl leading-none">
+                        +
+                      </span>
                     </summary>
                     <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
                   </details>
@@ -81,7 +102,14 @@ export function ServicePageView({ service }: { service: Service }) {
 
           <Reveal delay={0.1} className="lg:sticky lg:top-28">
             <div className="overflow-hidden rounded-2xl">
-              <img src={heroImg} alt="" loading="lazy" width={1600} height={1024} className="aspect-[4/5] w-full object-cover" />
+              <img
+                src={heroImg}
+                alt=""
+                loading="lazy"
+                width={1600}
+                height={1024}
+                className="aspect-[4/5] w-full object-cover"
+              />
             </div>
             <div className="mt-5 rounded-2xl border border-border bg-card p-7 shadow-soft">
               <p className="eyebrow">Start your project</p>
@@ -89,7 +117,10 @@ export function ServicePageView({ service }: { service: Service }) {
               <p className="mt-2 text-sm text-muted-foreground">
                 Tell us about your project — we'll respond within one business day with next steps.
               </p>
-              <Link to="/contact" className="mt-5 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground w-full justify-center">
+              <Link
+                to="/contact"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground w-full justify-center"
+              >
                 Request estimate <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

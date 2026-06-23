@@ -12,7 +12,10 @@ export function ServiceCard({ service }: { service: Service }) {
       <div
         aria-hidden
         className="absolute inset-x-0 top-0 h-px"
-        style={{ background: "linear-gradient(90deg, transparent, color-mix(in oklab, var(--gold) 60%, transparent), transparent)" }}
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, color-mix(in oklab, var(--gold) 60%, transparent), transparent)",
+        }}
       />
       <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[color-mix(in_oklab,var(--navy)_8%,transparent)] text-[var(--navy)] transition group-hover:bg-[var(--navy)] group-hover:text-[var(--gold)]">
         <Icon className="h-6 w-6" />

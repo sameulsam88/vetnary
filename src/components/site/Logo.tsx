@@ -1,4 +1,10 @@
-export function Logo({ className = "h-10 w-auto", invert = false }: { className?: string; invert?: boolean }) {
+export function Logo({
+  className = "h-10 w-auto",
+  invert = false,
+}: {
+  className?: string;
+  invert?: boolean;
+}) {
   return (
     <img
       src="/logo.png"

@@ -1,13 +1,4 @@
-import {
-  Stethoscope,
-  Building2,
-  HardHat,
-  ChefHat,
-  Bath,
-  Home,
-  Layers,
-  Hammer,
-} from "lucide-react";
+import { Stethoscope, Building2, HardHat, ChefHat, Bath, Home, Layers, Hammer } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export interface Service {
@@ -44,13 +35,28 @@ export const services: Service[] = [
       "Durable antimicrobial flooring & wall systems",
     ],
     process: [
-      { title: "Pre-construction", body: "Programming, permitting, value engineering, and trade coordination." },
-      { title: "Build phase", body: "On-site project management, weekly client updates, and milestone reviews." },
-      { title: "Commissioning", body: "Systems validation, finishes punch list, and clinical hand-off." },
+      {
+        title: "Pre-construction",
+        body: "Programming, permitting, value engineering, and trade coordination.",
+      },
+      {
+        title: "Build phase",
+        body: "On-site project management, weekly client updates, and milestone reviews.",
+      },
+      {
+        title: "Commissioning",
+        body: "Systems validation, finishes punch list, and clinical hand-off.",
+      },
     ],
     faqs: [
-      { q: "How long does a veterinary hospital build take?", a: "Typical ground-up hospitals run 9–14 months depending on size and site conditions." },
-      { q: "Can you work with our architect?", a: "Yes. We collaborate with healthcare architects and equipment vendors throughout design." },
+      {
+        q: "How long does a veterinary hospital build take?",
+        a: "Typical ground-up hospitals run 9–14 months depending on size and site conditions.",
+      },
+      {
+        q: "Can you work with our architect?",
+        a: "Yes. We collaborate with healthcare architects and equipment vendors throughout design.",
+      },
     ],
   },
   {
@@ -77,7 +83,10 @@ export const services: Service[] = [
       { title: "Reopen", body: "Final inspections, deep clean, and turnover." },
     ],
     faqs: [
-      { q: "Can you renovate while we stay open?", a: "Yes. Most renovations are phased so the clinic continues to operate." },
+      {
+        q: "Can you renovate while we stay open?",
+        a: "Yes. Most renovations are phased so the clinic continues to operate.",
+      },
     ],
   },
   {
@@ -99,12 +108,18 @@ export const services: Service[] = [
       "Final inspections and certificate of occupancy",
     ],
     process: [
-      { title: "Lease coordination", body: "Align landlord requirements and tenant improvement allowances." },
+      {
+        title: "Lease coordination",
+        body: "Align landlord requirements and tenant improvement allowances.",
+      },
       { title: "Permitting", body: "Drawings, submissions, and inspections handled in-house." },
       { title: "Turnkey delivery", body: "Move-in ready with equipment vendors coordinated." },
     ],
     faqs: [
-      { q: "Do you coordinate with our equipment vendors?", a: "Yes. We schedule cage, surgical, dental, and imaging installers as part of the build." },
+      {
+        q: "Do you coordinate with our equipment vendors?",
+        a: "Yes. We schedule cage, surgical, dental, and imaging installers as part of the build.",
+      },
     ],
   },
   {
@@ -131,7 +146,10 @@ export const services: Service[] = [
       { title: "Reveal", body: "Punch list and final styling." },
     ],
     faqs: [
-      { q: "How long does a kitchen remodel take?", a: "Most full kitchen remodels run 8–14 weeks once materials are on site." },
+      {
+        q: "How long does a kitchen remodel take?",
+        a: "Most full kitchen remodels run 8–14 weeks once materials are on site.",
+      },
     ],
   },
   {
@@ -158,7 +176,10 @@ export const services: Service[] = [
       { title: "Finish", body: "Final tile, glass, and fixtures installed by specialists." },
     ],
     faqs: [
-      { q: "Do you handle permits?", a: "Yes — plumbing and electrical permits are pulled and inspected by our team." },
+      {
+        q: "Do you handle permits?",
+        a: "Yes — plumbing and electrical permits are pulled and inspected by our team.",
+      },
     ],
   },
   {
@@ -185,7 +206,10 @@ export const services: Service[] = [
       { title: "Finish", body: "Flooring, millwork, paint, and styling." },
     ],
     faqs: [
-      { q: "Do you handle waterproofing?", a: "Yes — moisture mitigation is integrated into every basement build." },
+      {
+        q: "Do you handle waterproofing?",
+        a: "Yes — moisture mitigation is integrated into every basement build.",
+      },
     ],
   },
   {
@@ -212,7 +236,10 @@ export const services: Service[] = [
       { title: "Build", body: "Foundation, framing, and finishes." },
     ],
     faqs: [
-      { q: "Do you provide architectural drawings?", a: "Yes — design-build is our preferred delivery method." },
+      {
+        q: "Do you provide architectural drawings?",
+        a: "Yes — design-build is our preferred delivery method.",
+      },
     ],
   },
   {
@@ -239,7 +266,10 @@ export const services: Service[] = [
       { title: "Move-in", body: "Punch list, deep clean, and warranty walk-through." },
     ],
     faqs: [
-      { q: "Can we live in the home during construction?", a: "Sometimes — most clients move out for whole-home projects for safety and speed." },
+      {
+        q: "Can we live in the home during construction?",
+        a: "Sometimes — most clients move out for whole-home projects for safety and speed.",
+      },
     ],
   },
 ];

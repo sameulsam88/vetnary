@@ -35,9 +35,7 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 bg-white`}
-    >
+    <header className={`sticky top-0 z-50 w-full transition-all duration-300 bg-white`}>
       <div className="container-x flex h-20 items-center justify-between gap-4">
         <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Logo className="h-10 w-auto sm:h-12" />
